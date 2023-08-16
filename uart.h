@@ -28,4 +28,6 @@ void uartWorker() {
 
   static uint64_t uartTimer=100;
   if (millis()>=uartTimer) { uartTimer=millis()+50;
-    uartSend(0,enc.value[0]); } }
+    uartSend(0,enc.value[0]);
+    uartSend(1,enc.value[1]);
+    uartSend(2,enc.value[2]); } }
